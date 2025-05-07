@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kreasi Wajah Usaha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(to right, #ff6a00, #d03c1f);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6a00;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s;
+            font-size: 1.1em;
+        }
+        
+        nav a:hover {
+            color: #222;
+        }
+        
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            border-left: 6px solid #ff6a00;
+            padding-left: 15px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        
+        .portfolio,
+        .testimonial-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
+        
+        .portfolio img {
+            width: 100%;
+            max-width: 320px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service,
+        .testimonial {
+            background: #fff;
+            flex: 1 1 320px;
+            margin: 10px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        
+        .service h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #ff6a00;
+        }
+        
+        .service p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        .testimonial p {
+            font-size: 1.1em;
+            font-style: italic;
+        }
+        
+        .testimonial strong {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+            font-weight: normal;
+        }
+        
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 14px;
+            margin-top: 12px;
+            margin-bottom: 24px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+        
+        form button {
+            background-color: #ff6a00;
+            color: white;
+            padding: 14px 28px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        
+        form button:hover {
+            background-color: #e15d00;
+        }
+        
+        footer {
+            background-color: #1e1e2f;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 40px;
+        }
+        
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: #ff6a00;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kreasi Wajah Usaha</h1>
+        <p>Solusi Desain Grafis Kreatif untuk Bisnismu</p>
+    </header>
+
+    <nav>
+        <a href="#layanan">Layanan</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#pesan">Pemesanan</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section id="layanan">
+        <h2>Layanan Kami</h2>
+        <div class="portfolio">
+            <div class="service">
+                <h3>Desain Logo</h3>
+                <p>Desain logo mulai dari Rp20.000. Menampilkan identitas unik brand usaha kamu dengan desain logo yang kreatif dan profesional.</p>
+            </div>
+            <div class="service">
+                <h3>Desain Poster</h3>
+                <p>Desain poster mulai dari Rp35.000. Poster kreatif yang menarik dan efektif untuk promosi acara atau produk bisnis kamu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portofolio">
+        <h2>Portofolio</h2>
+        <div class="portfolio">
+            <img src="logodesain.jpg" alt="Logo Desain" />
+            <img src="desain posterr.jpg" alt="Poster Desain" />
+            <img src="promosidesain.png" alt="Poster Promosi" />
+        </div>
+    </section>
+
+    <section id="testimoni">
+        <h2>Testimoni Klien</h2>
+        <div class="testimonial-group">
+            <div class="testimonial">
+                <p>"Logo yang dibuat benar-benar merepresentasikan brand saya. Desainnya sangat kreatif dan menarik!" – <strong>Eka May Murniasih</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Poster untuk acara saya sangat keren! Bekerja sama dengan Kreasi Wajah Usaha benar-benar memudahkan promosi saya." – <strong>Rosita Dewi</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pesan">
+        <h2>Pemesanan</h2>
+        <form action="https://formspree.io/f/xkgrbnoe" method="POST">
+            <label>Nama:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap kamu" required />
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Alamat email aktif" required />
+            <label>Jenis Desain:</label>
+            <input type="text" name="jenis" placeholder="Logo, Poster, dll" required />
+            <label>Deskripsi Kebutuhan:</label>
+            <textarea name="pesan" placeholder="Jelaskan detail desain yang kamu inginkan..." rows="5" required></textarea>
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>📞 WhatsApp: <a href="https://wa.me/+6281279578817" target="_blank">+62 812-7957-8817</a></p>
+        <p>📞 WhatsApp: <a href="https://wa.me/+6282279767362" target="_blank">+62 822-7976-7362</a></p>
+        <p>📞 WhatsApp: <a href="https://wa.me/+6282279165263" target="_blank">+62 822-7916-5263</a></p>
+        <p>📞 WhatsApp: <a href="https://wa.me/+6285266080005" target="_blank">+62 852-6608-0005</a></p>
+        <p>📞 WhatsApp: <a href="https://wa.me/+6281271165803" target="_blank">+62 812-7116-5803</a></p>
+        <p>📧 Email: kreasiwajahusaha@gmail.com</p>
+        <p>📸 Instagram: <a href="https://www.instagram.com/kwu0505/profilecard/?igsh=MWFjYzYwZDFjbG0zcA==" target="_blank">@kreasiwajahusaha</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kreasi Wajah Usaha. All rights reserved. | <a href="https://www.instagram.com/kwu0505/profilecard/?igsh=MWFjYzYwZDFjbG0zcA==" target="_blank">Instagram</a></p>
+    </footer>
+</body>
+
+</html>
